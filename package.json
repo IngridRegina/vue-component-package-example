@@ -1,6 +1,6 @@
 {
   "name": "vue-component-package-example",
-  "version": "1.0.5",
+  "version": "1.0.1",
   "dependencies": {
     "vue": "^3.2.45"
   },
@@ -35,5 +35,9 @@
     "vite": "^4.0.0"
   },
   "author": "Ingrid-Regina Vähi",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IngridRegina/vue-component-package-example.git"
+  }
 }
