@@ -1,0 +1,39 @@
+{
+  "name": "vue-component-package-example",
+  "version": "1.0.4",
+  "dependencies": {
+    "vue": "^3.2.45"
+  },
+  "type": "module",
+  "description": "An example of a vue component as an npm package",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/my-component.umd.cjs",
+  "module": "./dist/my-component.js",
+  "exports": {
+    ".": {
+      "import": "./dist/my-component.js",
+      "require": "./dist/my-component.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vue": "^3.0.0",
+    "@rushstack/eslint-patch": "^1.1.4",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vitejs/plugin-vue-jsx": "^3.0.0",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "eslint": "^8.22.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "prettier": "^2.7.1",
+    "vite": "^4.0.0"
+  },
+  "author": "Ingrid-Regina Vähi",
+  "license": "ISC"
+}
