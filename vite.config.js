@@ -15,7 +15,17 @@ export default defineConfig({
         rollupOptions: {
             // make sure to externalize deps that shouldn't be bundled
             // into your library
-            external: ['vue'],
+            external: [
+                'vue',
+                'vite',
+                '@rushstack/eslint-patch',
+                '@vitejs/plugin-vue',
+                '@vitejs/plugin-vue-jsx',
+                '@vue/eslint-config-prettier',
+                'eslint',
+                'eslint-plugin-vue',
+                'prettier',
+            ],
             output: {
                 // Provide global variables to use in the UMD build
                 // for externalized deps
