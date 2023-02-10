@@ -1,5 +1,10 @@
-import { openBlock as t, createElementBlock as o, createElementVNode as i, toDisplayString as u } from "vue";
-const a = {
+import { openBlock as c, createElementBlock as _, createElementVNode as i, toDisplayString as p } from "vue";
+const r = (e, l) => {
+  const n = e.__vccOpts || e;
+  for (const [s, a] of l)
+    n[s] = a;
+  return n;
+}, u = { class: "heading" }, d = {
   __name: "my-component",
   props: {
     message: {
@@ -7,22 +12,22 @@ const a = {
       default: "Hello, world!"
     }
   },
-  setup(n) {
-    return (s, p) => (t(), o("div", null, [
-      i("h1", null, u(n.message), 1)
+  setup(e) {
+    return (l, n) => (c(), _("div", null, [
+      i("h1", u, p(e.message), 1)
     ]));
   }
-};
-function l(n) {
-  l.installed || (l.installed = !0, n.component("MyComponent", a));
+}, f = /* @__PURE__ */ r(d, [["__scopeId", "data-v-f19a7eab"]]);
+function o(e) {
+  o.installed || (o.installed = !0, e.component("MyComponent", f));
 }
-const r = {
-  install: l
+const m = {
+  install: o
 };
-let e = null;
-typeof window < "u" ? e = window.Vue : typeof global < "u" && (e = global.Vue);
-e && e.use(r);
+let t = null;
+typeof window < "u" ? t = window.Vue : typeof global < "u" && (t = global.Vue);
+t && t.use(m);
 export {
-  a as default,
-  l as install
+  f as default,
+  o as install
 };
