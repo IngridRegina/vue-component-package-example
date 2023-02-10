@@ -6,4 +6,12 @@ The component will display a message passed to the component as a prop. If the m
 
 ## Example use
 
+first install the package with ``npm i vue-component-package-example``
+
+import the component in your Vue file:
+
+``import MyComponent from 'vue-component-package-example'``
+
+then use in your template as such:
+
 ``<MyComponent message="I will be shown on the page!" />``
